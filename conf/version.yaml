@@ -6,6 +6,12 @@
         - tag: v0.28.0
           digest: sha256:6fd8fe1d19933c62efe0195a05e2c93b5237739dc68c398843dfa2dd22fcb91d
 
+    - name: webhook
+      url: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/webhook
+      versions:
+        - tag: v0.28.0
+          digest: sha256:f19dd16303ff8a8d55d706db5c8f8db593ba597684888bb15e70420fc4824103
+
     - name: kubeconfigwriter
       url: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/kubeconfigwriter
       versions:
