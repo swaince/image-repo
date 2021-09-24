@@ -1,0 +1,1 @@
+FROM gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/controller:v0.28.0@sha256:6fd8fe1d19933c62efe0195a05e2c93b5237739dc68c398843dfa2dd22fcb91d
