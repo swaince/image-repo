@@ -32,7 +32,6 @@ func main() {
 
 	for _, r := range rs {
 		for _, p := range r.Projects {
-			fmt.Printf("%s: %s\n", r.Workspace, p.Name)
 			for _, v := range p.Versions {
 				path := fmt.Sprintf("repo/%s/%s/%s", r.Workspace, p.Name, v.Tag)
 				err := os.MkdirAll(path, fs.ModeDir)
@@ -49,9 +48,9 @@ func main() {
 					from = fmt.Sprintf("FROM %s:%s@%s", p.Url, v.Tag, v.Digest)
 				}
 				fp := path + "/Dockerfile"
-				_, err = os.Open(fp)
+				err = ioutil.WriteFile(fp, []byte(from), 0666)
 				if err != nil {
-					ioutil.WriteFile(path+"/Dockerfile", []byte(from), fs.ModeAppend)
+					panic(err)
 				}
 			}
 		}
