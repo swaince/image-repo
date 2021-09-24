@@ -62,4 +62,4 @@
       url: mcr.microsoft.com/powershell
       versions:
         - tag: nanoserver
-          digest: sha256:b6d5ff841b78bdf2dfed7550000fd4f3437385b8fa686ec0f010be24777654d6"
+          digest: sha256:b6d5ff841b78bdf2dfed7550000fd4f3437385b8fa686ec0f010be24777654d6
