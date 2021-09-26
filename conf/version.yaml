@@ -62,4 +62,27 @@
       url: mcr.microsoft.com/powershell
       versions:
         - tag: nanoserver
-          digest: sha256:b6d5ff841b78bdf2dfed7550000fd4f3437385b8fa686ec0f010be24777654d6"
+          digest: sha256:b6d5ff841b78bdf2dfed7550000fd4f3437385b8fa686ec0f010be24777654d6
+
+    - name: triggers-controller
+      url: gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/controller
+      versions:
+        - tag: v0.16.0
+          digest: sha256:6d23285b419b29cfe1934fc2d09e680c3deee3f3bebc4e97ba66d140f448ce4d
+
+    - name: triggers-eventlistenersink
+      url: gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/eventlistenersink
+      versions:
+        - tag: v0.16.0
+          digest: sha256:97bcbbce4f592c6bf15c8811adf445d028f58ff5b38e24467d30d727dd919638
+
+    - name: triggers-webhook
+      url: gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/webhook
+      versions:
+        - tag: v0.16.0
+          digest: sha256:8b7dae4129dcae154fdcd5870fd4c242fc1ba2aa952ef71cb94c753b0f868324
+
+    - name: dashboard
+      url: gcr.io/tekton-releases/github.com/tektoncd/dashboard/cmd/dashboard
+      versions:
+        - digest: sha256:507a6251e809bc2eaa47d1012bf4d52d24dfd903104bf78f397c3191be9ea3b2
