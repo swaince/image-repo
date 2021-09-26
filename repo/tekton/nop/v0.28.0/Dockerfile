@@ -1,1 +1,1 @@
-FROM :v0.28.0@sha256:81c38a3d11e9f82898ac34318436b7019c23a2e279c60cb721a72c6ecccad476
+FROM gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop:v0.28.0@sha256:81c38a3d11e9f82898ac34318436b7019c23a2e279c60cb721a72c6ecccad476

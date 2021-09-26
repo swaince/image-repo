@@ -31,7 +31,7 @@
           digest: sha256:61013ff4268fbf1046d623d3eab2bcb072e776202d86cb95ad7238a8c45c5420
 
     - name: nop
-      url:
+      url: gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/nop
       versions:
         - tag: v0.28.0
           digest: sha256:81c38a3d11e9f82898ac34318436b7019c23a2e279c60cb721a72c6ecccad476
