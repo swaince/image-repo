@@ -48,9 +48,11 @@ func main() {
 					from = fmt.Sprintf("FROM %s:%s@%s", p.Url, v.Tag, v.Digest)
 				}
 				fp := path + "/Dockerfile"
-				err = ioutil.WriteFile(fp, []byte(from), 0666)
+				os.Chmod(fp, 0666)
+				err = ioutil.WriteFile(fp, []byte(from), fs.ModeAppend)
 				if err != nil {
-					panic(err)
+					fmt.Println(err)
+					continue
 				}
 			}
 		}
