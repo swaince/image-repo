@@ -82,6 +82,12 @@
         - tag: v0.16.0
           digest: sha256:8b7dae4129dcae154fdcd5870fd4c242fc1ba2aa952ef71cb94c753b0f868324
 
+    - name: interceptors
+      url: gcr.io/tekton-releases/github.com/tektoncd/triggers/cmd/interceptors
+      versions:
+        - tag: v0.16.0
+          digest: sha256:6c7db03e0caf6fab13192b54ececd53926beae759efe9cbe1aa709cd707be687
+
     - name: dashboard
       url: gcr.io/tekton-releases/github.com/tektoncd/dashboard/cmd/dashboard
       versions:
