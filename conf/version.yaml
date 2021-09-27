@@ -94,6 +94,6 @@
         - digest: sha256:507a6251e809bc2eaa47d1012bf4d52d24dfd903104bf78f397c3191be9ea3b2
 
     - name: kaniko-executor
-      url:   gcr.io/kaniko-project/executor:latest
+      url:  gcr.io/kaniko-project/executor
       versions:
         - tag: latest

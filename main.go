@@ -44,6 +44,8 @@ func main() {
 					from = fmt.Sprintf("FROM %s:latest", p.Url)
 				} else if v.Tag == "" {
 					from = fmt.Sprintf("FROM %s@%s", p.Url, v.Digest)
+				} else if v.Digest == "" {
+					from = fmt.Sprintf("FROM %s:%s", p.Url, v.Tag)
 				} else {
 					from = fmt.Sprintf("FROM %s:%s@%s", p.Url, v.Tag, v.Digest)
 				}
